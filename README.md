@@ -121,17 +121,6 @@ A point-of-sale system I build and run in a real coffee business — built with 
 
 ---
 
-### 📊 Stats
-
-<p align="center">
-  <a href="https://github.com/tavodev">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=tavodev&show_icons=true&include_all_commits=true&count_private=true"/>
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tavodev&layout=compact&langs_count=8"/>
-  </a>
-</p>
-
----
-
 ## 📫 Contact
 
 - 💼 LinkedIn: [linkedin.com/in/jimenezdev](https://www.linkedin.com/in/jimenezdev/)
