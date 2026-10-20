@@ -3,13 +3,6 @@
 El `README.md` de este repo es el perfil de github.com/tavodev. Copia el texto en inglés de tavo.dev
 (repo `tavodevlanding`, archivo `src/i18n/en.ts`) y sus capturas (`src/assets/img/`).
 
-## Pendiente
-
-- [ ] **Contribuciones privadas en el perfil.** La gráfica pública solo muestra 126 contribuciones en el
-  último año (con las privadas son unas 9,500). Activar Settings → Public profile → Contributions &
-  activity → "Include private contributions on my profile". Llena la gráfica verde del perfil y la
-  serpiente; no muestra nombres de repos.
-
 ## Token de las estadísticas
 
 `STATS_TOKEN` es un token classic de `tavodev` con los scopes `repo`, `read:user` y `read:org`. Sin
@@ -35,6 +28,9 @@ Cambiar solo los scopes de un token classic no cambia su valor: no hace falta vo
   Para correrlo a mano: `GH_TOKEN=$(gh auth token) node scripts/stats.mjs`.
 - `.github/workflows/stats.yml` corre cada día (y a mano con `workflow_dispatch`): regenera las tarjetas
   si hay `STATS_TOKEN`, genera la serpiente con Platane/snk y hace commit de `assets/` si algo cambió.
+- La gráfica pública del perfil incluye las contribuciones privadas (Settings → Public profile →
+  "Include private contributions on my profile", activado el 2026-10-20). Sin eso, la gráfica verde y la
+  serpiente quedan casi vacías.
 - Las acciones van fijadas por SHA.
 
 ## Cuando cambie tavo.dev
