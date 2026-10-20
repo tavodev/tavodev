@@ -1,78 +1,107 @@
-# 👋 Hi, I'm tavodev
+# Hi, I'm Tavo.
 
-### 🐍 Backend Engineer (Python/Django) · 🤖 building & orchestrating AI agents
+I'm a Forward Deployed Engineer and the founder of [OLON](https://olon.mx), a point of sale for coffee shops. I've been programming for more than ten years, and today I build with AI agents under clear rules: every project has its own architecture, instructions, permissions and tests, and nothing reaches production without review.
 
----
+[tavo.dev](https://tavo.dev/en/) · [X](https://x.com/tavo_dev) · [hola@tavo.dev](mailto:hola@tavo.dev)
 
-### 🌐 About me
+## What I do
 
-I'm a **Backend Engineer specialized in Python/Django** who builds **production-grade APIs and systems** — reliability, async workflows, performance, and maintainable architecture (service layer / domain-oriented design).
+**[OLON](https://olon.mx)**, founder and Forward Deployed Engineer, since 2025. I have a coffee bar, and OLON started because I couldn't find a point of sale I liked for running it. Now it's a product for coffee shops all over Mexico. It keeps taking payments when the internet goes down, and it tells you how much you make on each drink, along with how much you sold. Every change goes through automated tests and review before it reaches the coffee shops.
 
-These days I'm deep into **agentic AI engineering**: designing **Claude Code** workflows, custom agents, and end-to-end automation that take projects from idea to shipped product — including platforms and languages outside my core stack.
+**RADIUS**, Full Stack Developer, since 2024, remote.
 
----
+**Freelance.** I build custom software for businesses, like inventory, invoicing, CRMs and websites. If your business still runs on a notebook or a spreadsheet nobody understands anymore, let's talk.
 
-### 🛠️ Core stack
+**[Hanami](https://www.instagram.com/hanamicafe_vhsa/)**, my coffee bar in Villahermosa. It's where OLON gets tested before anyone else uses it, and it's the reason I now also work on tech projects for the coffee world.
 
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white)
-![DRF](https://img.shields.io/badge/DRF-A30000?logo=django&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
-![Celery](https://img.shields.io/badge/Celery-37814A?logo=celery&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?logo=amazonaws&logoColor=white)
-![HTMX](https://img.shields.io/badge/HTMX-3366CC?logo=htmx&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?logo=tailwindcss&logoColor=white)
+## How I work
 
-**Practices:** service-layer architecture · domain-oriented design · layered testing (pytest, factory_boy) · structured logging & observability · queues, retries & idempotency.
+I started in 2015 writing backend code, mostly Python and Django, and I was a Tech Lead before I began working with agents. That experience is what I use now: I decide the architecture, split the work into well-scoped tasks and review every change the way I'd review one from anyone on the team.
 
----
+The agents work inside a harness I set up for each project:
 
-### 🤖 Agentic AI engineering
+- Instructions with the business rules, plus my own MCP servers, so the agent looks things up instead of guessing.
+- Actions no agent takes without my approval, like deploying or touching secrets. Each tool's permissions and hooks that block the attempt enforce it.
+- The same rules for Claude Code and Codex.
+- Automated tests and a review of every change before it ships.
 
-I orchestrate AI coding agents (primarily **Claude Code**) to design, build, and ship real products end-to-end:
+[agentsconfig](https://github.com/tavodev/agentsconfig), one of my open source projects, came out of this: it's for reviewing and auditing agent configuration.
 
-- Custom agent configs, slash commands, hooks and `CLAUDE.md` playbooks per project.
-- Repeatable workflows: scoped tasks, layered testing, and review loops.
-- Shipping in **languages I don't write by hand** — Swift, Flutter — by driving the agent, owning architecture and quality.
+With this approach I've shipped native macOS apps in Swift, the OLON app in Flutter and games in C# and Lua. Soji, for example, shipped with 136 automated tests, signed and notarized by Apple.
 
----
+I use Claude Code and Codex every day and keep a close eye on what comes out each week. Most of it reaches me through X, which is also where I share what I try.
 
-### 🚀 Featured projects
+Tools: Claude Code, Codex, MCP, hooks, skills, Python, Django, TypeScript, Swift, Flutter, C#, Lua, PostgreSQL, Docker and AWS.
 
-#### 🧹 [Soji](https://github.com/tavodev/soji-releases) · native macOS disk cleaner
-> Swift / SwiftUI · **shipped v1.0.0** — orchestrated end-to-end with Claude Code
+## Projects
 
-A CleanMyMac-style disk cleaner for macOS. **Signed with Developer ID, notarized by Apple, auto-updating (Sparkle).** Smart Scan, 10 cleaning modules, navigable disk treemap (Space Lens), menu-bar widget, and **136 passing tests**. Built almost entirely by driving an AI agent — I owned the architecture, safety model, testing strategy and release pipeline.
-*(Public releases repo; source private.)*
+I built all of them directing AI agents with this same approach.
 
-#### ☕ OLON — multi-tenant POS, live in a real coffee business
-> Django + DRF backend (my work) · Flutter tablet app (AI-assisted)
+### Open source
 
-Production point-of-sale system: **multi-tenant, multi-branch**, JWT auth, POS sales & open orders, cash reconciliation, inventory with recipes & COGS, admin dashboard, and Stripe billing. The **Django/PostgreSQL backend is hand-built**; the **Flutter tablet client** was shipped orchestrating AI workflows.
+All three are native macOS apps under the MIT license.
 
----
+- [wports](https://github.com/tavodev/wports): shows which ports are in use and lets you kill the process holding them. It comes with a CLI and an MCP server so agents can use it too.
+- [agentsconfig](https://github.com/tavodev/agentsconfig): review and edit the settings for Claude Code, Codex, Gemini CLI and other agents in one place, both global and per project.
+- [repoyo](https://github.com/tavodev/repoyo): lists your GitHub repos so you can change their visibility, archive them or delete them. It starts in simulation mode, and to actually delete a repo you have to type its full name.
 
-### 🧩 Shipped with agentic AI workflows
+### macOS apps
 
-Not my primary languages — delivered by orchestrating AI agents while owning design, testing and release:
+- [Soji](https://github.com/tavodev/soji-releases): a disk cleaner. Signed and notarized by Apple, with automatic updates.
+- [Leviatán](https://github.com/tavodev/leviatan-releases): a Git client.
 
-![Swift](https://img.shields.io/badge/Swift-F05138?logo=swift&logoColor=white)  → **Soji** (macOS app, published & notarized)
-![Flutter](https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white)  → **OLON** tablet POS client
+### Games
 
----
+I've made games with Raylib-cs, Godot, Unity and LÖVE.
 
-### 📊 GitHub stats
+- [Chibola](https://chibola.xyz): a tower defense game where the chibolas come rolling downhill and your guardians have to stop them. For Windows, Mac and Linux.
+- [play.tavo.dev](https://play.tavo.dev): the experimental games I make with AI. They run in the browser.
 
-![tavodev's stats](https://github-readme-stats.vercel.app/api?username=tavodev&show_icons=true&count_private=true&include_all_commits=true&theme=default)
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=tavodev&layout=compact&langs_count=8&theme=default)
+And one that isn't ready yet: Japonito, an app for learning hiragana in Spanish. I'm making it because I'm learning too.
 
----
+### Coffee
 
-### 📫 Let's connect
+- [Olon Atlas](https://coffee-atlas-beta.vercel.app): a 3D coffee atlas covering what's inside the bean, varieties, roasting and origin. The 3D models are generated with code.
+- [Reto Barista del Sureste](https://retobarista.olon.mx): website and sign-ups for a barista competition in Villahermosa.
+- [Café Elementos](https://cafeelementos-propuestas.vercel.app): website for a coffee shop in Villahermosa.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/jimenezdev/)
-[![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:hola@tavo.dev)
+Most of my freelance work is private, so it isn't here. If you want to know what I've done that's close to what you need, just ask.
 
-**Open to backend & AI-engineering roles.** Reach out at **hola@tavo.dev**.
+## Experience
+
+| Years | Company | Role |
+|---|---|---|
+| 2025-present | OLON | Founder and Forward Deployed Engineer |
+| 2024-present | RADIUS | Full Stack Developer |
+| 2024-present | Woutick! | Software Developer |
+| 2022-2024 | mediQó | Tech Lead |
+| 2021-2022 | Zequenze | Software Developer |
+
+<details>
+<summary>Before 2021</summary>
+
+| Years | Company | Role |
+|---|---|---|
+| 2021 | IFORTAB | Python Programming Instructor |
+| 2020-2021 | CINDEHU | Teacher |
+| 2019-2021 | Binary System | Full Stack Developer (Django) |
+| 2019-2020 | Colmena HUB | Project Manager |
+| 2018-2019 | Computación y Tecnologías del Sureste | Full Stack Developer |
+| 2016 | CMAIG | Web Developer (Python and Django) |
+| 2015-2016 | Computación y Tecnologías del Sureste | Full Stack Developer |
+
+</details>
+
+## Community
+
+I started [Dev Night Talks](https://www.meetup.com/dev-night-talks/), a monthly series of tech talks, and I organize the [AWS User Group Villahermosa](https://www.meetup.com/aws-ug-villahermosa/). Before I went all in on development I taught Python programming classes, and I still have a [YouTube channel](https://www.youtube.com/@devtavo) with tutorials, even if I haven't posted anything in a while.
+
+## Contact
+
+If you have a project in mind, email me at [hola@tavo.dev](mailto:hola@tavo.dev).
+
+If you're interested in how I set up and direct agents, follow me on [X](https://x.com/tavo_dev), that's where I post the most.
+
+I'm not looking for a job right now, but if you have an interesting offer, I'm happy to hear it.
+
+[X](https://x.com/tavo_dev) · [Instagram](https://www.instagram.com/tavodev/) · [TikTok](https://www.tiktok.com/@devtavo) · [YouTube](https://www.youtube.com/@devtavo) · [LinkedIn](https://www.linkedin.com/in/jimenezdev/)
