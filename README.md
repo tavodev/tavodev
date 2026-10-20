@@ -1,5 +1,3 @@
-<img align="right" width="180" src="assets/tavo.webp" alt="Tavo smiling, wearing glasses and a white T-shirt, outdoors">
-
 # Hi, I'm Tavo.
 
 I'm a Forward Deployed Engineer and the founder of [OLON](https://olon.mx), a point of sale for coffee shops. I've been programming for more than ten years, and today I build with AI agents under clear rules: every project has its own architecture, instructions, permissions and tests, and nothing reaches production without review.
@@ -9,8 +7,6 @@ I'm a Forward Deployed Engineer and the founder of [OLON](https://olon.mx), a po
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-161616?style=flat-square)](https://www.linkedin.com/in/jimenezdev/)
 [![YouTube](https://img.shields.io/badge/YouTube-161616?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/@devtavo)
 [![Email](https://img.shields.io/badge/hola%40tavo.dev-161616?style=flat-square&logo=gmail&logoColor=white)](mailto:hola@tavo.dev)
-
-<br clear="right">
 
 ## What I do
 
