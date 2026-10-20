@@ -54,8 +54,8 @@ I use Claude Code and Codex every day and keep a close eye on what comes out eac
 Tools: Claude Code, Codex, MCP, hooks, skills, Python, Django, TypeScript, Swift, Flutter, C#, Lua, PostgreSQL, Docker and AWS.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py,django,ts,swift,flutter,cs,lua,godot,unity,postgres,docker,aws&theme=dark">
-  <img src="https://skillicons.dev/icons?i=py,django,ts,swift,flutter,cs,lua,godot,unity,postgres,docker,aws&theme=light" alt="Python, Django, TypeScript, Swift, Flutter, C#, Lua, Godot, Unity, PostgreSQL, Docker and AWS">
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py%2Cdjango%2Cts%2Cswift%2Cflutter%2Ccs%2Clua%2Cgodot%2Cunity%2Cpostgres%2Cdocker%2Caws&theme=dark">
+  <img src="https://skillicons.dev/icons?i=py%2Cdjango%2Cts%2Cswift%2Cflutter%2Ccs%2Clua%2Cgodot%2Cunity%2Cpostgres%2Cdocker%2Caws&theme=light" alt="Python, Django, TypeScript, Swift, Flutter, C#, Lua, Godot, Unity, PostgreSQL, Docker and AWS">
 </picture>
 
 ## On GitHub
