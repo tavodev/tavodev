@@ -5,24 +5,26 @@ El `README.md` de este repo es el perfil de github.com/tavodev. Copia el texto e
 
 ## Pendiente
 
-- [ ] **Token para las estadísticas.** El secreto `STATS_TOKEN` existe pero no es válido: el workflow
-  `Stats` falla con `GitHub API 401: "Bad credentials"` (se guardó lo que había en el portapapeles, que no
-  era un token). Hasta corregirlo, las tarjetas `assets/activity-*.svg` y `assets/languages-*.svg` se
-  quedan con los números del 2026-10-20 y la serpiente no se actualiza.
-  1. Crear un token fine-grained en https://github.com/settings/personal-access-tokens/new: dueño
-     `tavodev`, acceso a "All repositories", sin permisos extra (basta con Metadata de solo lectura).
-     Un token fine-grained probablemente no cuenta las contribuciones en repos privados de
-     organizaciones; si importa, usar uno classic con `repo`
-     (https://github.com/settings/tokens/new?scopes=repo&description=STATS_TOKEN).
-  2. Guardarlo desde una terminal propia (no con `!` dentro de Claude Code, porque ahí no lee lo que
-     escribes): `gh secret set STATS_TOKEN -R tavodev/tavodev` y pegar el token.
-  3. Lanzar el workflow: `gh workflow run stats.yml -R tavodev/tavodev` y revisar que el paso `Cards`
-     termine bien.
-  4. Cuando venza el token, repetir los pasos 1 y 2.
 - [ ] **Contribuciones privadas en el perfil.** La gráfica pública solo muestra 126 contribuciones en el
   último año (con las privadas son unas 9,500). Activar Settings → Public profile → Contributions &
   activity → "Include private contributions on my profile". Llena la gráfica verde del perfil y la
   serpiente; no muestra nombres de repos.
+
+## Token de las estadísticas
+
+`STATS_TOKEN` es un token classic de `tavodev` con los scopes `repo`, `read:user` y `read:org`. Sin
+`read:user` y `read:org`, GitHub no devuelve las contribuciones privadas y las tarjetas bajan a solo lo
+público (pasó el 2026-10-20: 127 contribuciones en lugar de 9,551). Vence el **2027-01-18**.
+
+Para renovarlo:
+
+1. En https://github.com/settings/tokens, regenerar `STATS_TOKEN` (o crear uno nuevo con esos tres scopes).
+2. Guardarlo desde una terminal propia (no con `!` dentro de Claude Code, porque ahí no lee lo que
+   escribes): `gh secret set STATS_TOKEN -R tavodev/tavodev` y pegar el token, que empieza con `ghp_`.
+3. Lanzar el workflow: `gh workflow run stats.yml -R tavodev/tavodev` y revisar que el paso `Cards`
+   imprima cerca de 10,000 contribuciones en `lastYear`, no un centenar.
+
+Cambiar solo los scopes de un token classic no cambia su valor: no hace falta volver a guardar el secreto.
 
 ## Cómo funciona
 

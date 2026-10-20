@@ -1,5 +1,6 @@
 # Updates the stats cards and the contribution snake once a day.
-# STATS_TOKEN is a token from tavodev with read access to private repositories; without it the
+# STATS_TOKEN is a classic token from tavodev with repo, read:user and read:org (without the last two
+# private contributions are left out); without it the
 # cards would only count public work, so that step is skipped.
 
 name: Stats
