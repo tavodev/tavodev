@@ -43,7 +43,7 @@ The agents work inside a harness I set up for each project:
 
 [agentsconfig](https://github.com/tavodev/agentsconfig), one of my open source projects, came out of this: it's for reviewing and auditing agent configuration.
 
-With this approach I've shipped native macOS apps in Swift, the OLON app in Flutter and games in C# and Lua. Soji, for example, shipped with 136 automated tests, signed and notarized by Apple.
+With this approach I've shipped native macOS apps in Swift, the OLON app in Flutter and games in C# and Lua. Soji, for example, shipped with 136 automated tests.
 
 I use Claude Code and Codex every day and keep a close eye on what comes out each week. Most of it reaches me through X, which is also where I share what I try.
 
@@ -89,7 +89,7 @@ All three are native macOS apps under the MIT license.
 <a href="https://github.com/tavodev/soji-releases"><img src="assets/soji.webp" width="49%" alt="Soji analyzing a Mac's disk"></a>
 <a href="https://github.com/tavodev/leviatan-releases"><img src="assets/leviatan.webp" width="49%" alt="Leviatán showing the commit history of the agentsconfig repository"></a>
 
-- [Soji](https://github.com/tavodev/soji-releases): a disk cleaner. Signed and notarized by Apple, with automatic updates.
+- [Soji](https://github.com/tavodev/soji-releases): a disk cleaner with automatic updates.
 - [Leviatán](https://github.com/tavodev/leviatan-releases): a Git client.
 
 ### Games
@@ -144,7 +144,7 @@ Most of my freelance work is private, so it isn't here. If you want to know what
 
 ## Community
 
-I started [Dev Night Talks](https://www.meetup.com/dev-night-talks/), a monthly series of tech talks, and I organize the [AWS User Group Villahermosa](https://www.meetup.com/aws-ug-villahermosa/). Before I went all in on development I taught Python programming classes, and I still have a [YouTube channel](https://www.youtube.com/@devtavo) with tutorials, even if I haven't posted anything in a while.
+I started [Dev Night Talks](https://www.meetup.com/dev-night-talks/), a weekly series of tech talks, and I organize the [AWS User Group Villahermosa](https://www.meetup.com/aws-ug-villahermosa/). Before I went all in on development I taught Python programming classes, and I still have a [YouTube channel](https://www.youtube.com/@devtavo) with tutorials, even if I haven't posted anything in a while.
 
 ## Contact
 
