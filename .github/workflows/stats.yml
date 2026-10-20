@@ -1,0 +1,49 @@
+# Updates the stats cards and the contribution snake once a day.
+# STATS_TOKEN is a token from tavodev with read access to private repositories; without it the
+# cards would only count public work, so that step is skipped.
+
+name: Stats
+
+on:
+  schedule:
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stats
+  cancel-in-progress: true
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    env:
+      STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Cards
+        if: env.STATS_TOKEN != ''
+        run: node scripts/stats.mjs
+        env:
+          GH_TOKEN: ${{ env.STATS_TOKEN }}
+
+      - name: Snake
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3.5.0
+        with:
+          github_user_name: tavodev
+          github_token: ${{ secrets.STATS_TOKEN || github.token }}
+          outputs: |
+            assets/snake-light.svg?color_snake=#161616&color_dots=#ECECE9,#C9C9C4,#9A9A95,#5E5E5B,#2E2E2D
+            assets/snake-dark.svg?color_snake=#EDEDEA&color_dots=#242423,#3A3A38,#5E5E5B,#8A8A85,#C8C8C3
+
+      - name: Commit
+        run: |
+          git add assets
+          git diff --cached --quiet && exit 0
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Update stats'
+          git push
